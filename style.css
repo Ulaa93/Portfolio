@@ -1,0 +1,751 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* Nav */
+.burger {
+    display: none;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 8vh;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgb(116, 77, 32);
+}
+
+nav ul {
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 1 100%;
+}
+
+nav li {
+    list-style: none;
+    border-right: 2px solid rgb(116, 77, 32);
+    width: 20%;
+}
+
+nav li:last-of-type {
+    border-right: none;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    width: 100%;
+    transition: 0.2s;
+    font-weight: bold;
+    height: 5vh;
+    line-height: 5vh;
+    text-decoration: none;
+    color: rgb(116, 77, 32);
+    cursor: pointer;
+}
+
+nav a:hover {
+    transform: scale(1.5);
+}
+
+
+/* Header */
+
+header {
+    position: relative;
+    width: 100%;
+    height: 92vh;
+    background-image: url(img/notebook-1280538_1920.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.name {
+    position: absolute;
+    text-align: center;
+    color: ivory;
+    height: 60%;
+    top: 30%;
+    left: 20%;
+    letter-spacing: 4px;
+}
+
+.name h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 6em;
+    margin: 20px auto;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s .5s steps(20) forwards;
+    border-right: 4px solid transparent;
+    opacity: 0;
+}
+
+.name h2 {
+    margin-top: 20px;
+    margin: 20px auto;
+    font-family: 'Lobster', cursive;
+    font-size: 3.5em;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3.5s 3.5s steps(34) forwards;
+    border-right: 4px solid transparent;
+    opacity: 0;
+}
+
+@keyframes typing {
+    0% {
+        opacity: 1;
+        width: 0;
+        border-color: transparent;
+    }
+
+    10% {
+        border-color: ivory;
+    }
+
+    20% {
+        border-color: transparent;
+    }
+
+    30% {
+        border-color: ivory;
+    }
+
+    40% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: ivory;
+    }
+
+    60% {
+        border-color: transparent;
+    }
+
+    70% {
+        border-color: ivory;
+    }
+
+    80% {
+        border-color: transparent;
+    }
+
+    90% {
+        border-color: ivory;
+    }
+
+    100% {
+        opacity: 1;
+        width: 100%;
+        border-color: transparent;
+    }
+}
+
+
+/* Section */
+
+section {
+    margin: 20px auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.section-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    border-right: dashed 1px rgb(116, 77, 32);
+    border-left: dashed 1px rgb(116, 77, 32);
+}
+
+section h2 {
+    margin: 10px auto;
+    padding: 15px;
+    width: 30vw;
+    text-align: center;
+    border-bottom: rgb(116, 77, 32) solid 2px;
+    font-size: 3rem;
+    color: rgb(116, 77, 32);
+    font-family: 'Lobster', cursive, sans-serif;
+}
+
+
+/* About me */
+
+.aboutme {
+    min-height: 150vh;
+}
+
+.aboutme .photo {
+    margin: 15px 0;
+    height: 25vh;
+    width: 25vh;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url(img/Kosior\ \ \ 45x65.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.aboutme p {
+    margin: 20px 100px 0 100px;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 20px;
+}
+
+.aboutme .bigger {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+/* Skills, Contact */
+
+.skills,
+.contact {
+    background-color: rgba(61, 51, 44, 0.7);
+    color: ivory;
+    border-top-left-radius: 150px;
+    -moz-border-radius-topleft: 150px;
+    -webkit-border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    -moz-border-radius-bottomright: 150px;
+    -webkit-border-bottom-right-radius: 150px;
+    height: 80vh;
+}
+
+.skills h2,
+.contact h2 {
+    color: ivory;
+    border-bottom-color: ivory;
+}
+
+.skills .section-wrap,
+.contact .contact-wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    border: none;
+}
+
+
+/* Skills */
+
+.skills .section-wrap {
+    display: flex;
+    height: 60vh;
+    border: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.skills h3 {
+    font-size: 2em;
+    padding: 2vh;
+    border-bottom: 1px solid ivory;
+}
+
+.skills p {
+    padding: 2vh;
+    font-size: 2.5em;
+}
+
+
+/* Projects */
+
+.projects {
+    min-height: 100vh;
+}
+
+.projects .section-wrap {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    overflow: hidden;
+}
+
+.projects article {
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    width: 50%;
+    overflow: hidden;
+    flex-shrink: 1;
+    align-items: center;
+}
+
+.project {
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.project p {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: ivory;
+    margin: 0;
+    font-size: 2em;
+    border-bottom: 1px solid ivory;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.project img {
+    height: 40vh;
+    width: 60vh;
+    transition: 0.5s;
+}
+
+.project:hover img {
+    filter: brightness(50%);
+}
+
+.project:hover p {
+    opacity: 1;
+}
+
+.description {
+    width: 60vh;
+    border: 1px solid rgb(116, 77, 32);
+    height: 8vh;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Contact */
+
+.contact-wrap {
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.contact-div {
+    padding: 20px;
+    width: 50%;
+    font-size: 1.5em;
+}
+
+.contact a {
+    text-decoration: none;
+    color: ivory;
+}
+
+.contact a:visited {
+    color: bisque;
+}
+
+.contact-div i {
+    padding: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    font-size: 1.2em;
+    padding: 0 10px;
+    justify-content: center;
+    align-content: center;
+
+}
+
+form input {
+    height: 4vh;
+}
+
+form input,
+textarea {
+    font-size: 0.8em;
+    margin: 5px 0;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    height: 5vh;
+    line-height: 5vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: ivory;
+}
+
+
+
+@media screen and (max-width:1024px) {
+    nav a {
+        font-size: 1em;
+    }
+
+    .wrapper {
+        max-width: 1000px;
+    }
+
+    .name h1 {
+        font-size: 4em;
+    }
+
+    .name h2 {
+        font-size: 2.5em;
+    }
+
+    .aboutme p {
+        margin: 25px;
+    }
+
+    .skills .section-wrap,
+    .contact .contact-wrap {
+        max-width: 1000px;
+    }
+
+    .skills h3 {
+        font-size: 1.5em;
+    }
+
+    .skills p {
+        font-size: 2em;
+    }
+
+    .projects .section-wrap {
+        justify-content: space-around;
+    }
+
+    .projects article {
+        height: 40vh;
+        width: 45%;
+    }
+
+    .project img {
+        height: 30vh;
+        width: 45vh;
+    }
+
+    .description {
+        width: 45vh;
+        height: 6vh;
+    }
+
+    .contact-wrap {
+        height: 50vh;
+    }
+
+    .contact-div {
+        padding: 0;
+        width: 60%;
+        font-size: 1.4em;
+    }
+
+    form {
+        flex-basis: 40%;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+
+    .burger {
+        position: fixed;
+        display: block;
+        font-size: 2em;
+        top: 1vh;
+        left: 2%;
+        z-index: 2;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    nav {
+        position: fixed;
+        height: 100vh;
+        width: 50vh;
+        background-color: rgba(255, 255, 240, 0.9);
+        align-items: center;
+        left: -60vh;
+        transition: 0.3s;
+    }
+
+    nav ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 80vh;
+        justify-content: space-around;
+    }
+
+    nav li {
+        width: 40vh;
+        height: 10vh;
+        border-bottom: 2px solid rgb(116, 77, 32);
+        border-right: none;
+    }
+
+    nav a {
+        height: 10vh;
+        line-height: 10vh;
+        font-size: 1.5em;
+    }
+
+    nav a:hover {
+        transform: scale(1);
+    }
+
+    .burger.active {
+        transform: rotate(180deg);
+    }
+
+    .burger.active+nav {
+        left: 0;
+    }
+
+    .section-wrap {
+        border: none;
+    }
+
+    header {
+        height: 100vh;
+    }
+
+    .name h1 {
+        font-size: 3em;
+    }
+
+    .name h2 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 2.5em;
+    }
+
+    .aboutme {
+        min-height: 200vh;
+    }
+
+    .skills {
+        height: 90vh;
+    }
+
+    .skills .section-wrap div {
+        flex-basis: 45%;
+    }
+
+    .skills h3 {
+        font-size: 1.4em;
+    }
+
+    .projects {
+        min-height: 150vh;
+    }
+
+    .projects article {
+        height: 55vh;
+        flex: 1 1 100%;
+    }
+
+    .project img {
+        height: 50vh;
+        width: 100%;
+    }
+
+    .description {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .contact {
+        height: 100vh;
+    }
+
+    .contact-wrap {
+        flex-direction: row;
+    }
+
+    .contact-div {
+        flex-basis: 100%;
+    }
+
+    form {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width:640px) and (orientation: landscape) {
+
+    .name h1 {
+        font-size: 1.5em;
+        animation: none;
+        opacity: 1;
+        overflow: inherit;
+
+    }
+
+    .name h2 {
+        display: inline-block;
+        font-size: 1em;
+        animation: none;
+        opacity: 1;
+        white-space: pre-wrap;
+        overflow: inherit;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    .skills h3 {
+        font-size: 1.2em;
+    }
+
+    .skills p {
+        font-size: 1.2em;
+    }
+
+    .projects {
+        min-height: 150vh;
+    }
+
+    .projects article {
+        height: 80vh;
+    }
+
+    .project img {
+        height: 70vh;
+        filter: brightness(50%);
+    }
+
+    .description {
+        margin-bottom: 20px;
+    }
+
+    .project p {
+        opacity: 1;
+    }
+
+    .project:hover img {
+        filter: brightness(50%);
+    }
+
+    .project:hover p {
+        opacity: 1;
+    }
+
+    .contact {
+        min-height: 150vh;
+    }
+
+    .contact form {
+        height: 70vh;
+        font-size: 0.8em;
+    }
+
+    .contact-div {
+        height: 60vh;
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (max-width:640px) and (orientation: portrait) {
+
+    header {
+        background-size: cover;
+        background-position: right;
+    }
+
+    .name {
+        width: 50%;
+        height: 60%;
+    }
+
+    .name h1 {
+        font-size: 1.5em;
+        animation: none;
+        opacity: 1;
+        overflow: inherit;
+
+    }
+
+    .name h2 {
+        display: inline-block;
+        font-size: 1em;
+        animation: none;
+        opacity: 1;
+        white-space: pre-wrap;
+        overflow: inherit;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+
+    .skills .section-wrap div {
+        flex-basis: 100%;
+    }
+
+    .skills h3 {
+        font-size: 1.2em;
+    }
+
+    .skills p {
+        font-size: 1.2em;
+    }
+
+    .projects {
+        min-height: 150vh;
+    }
+
+    .projects article {
+        height: 40vh;
+    }
+
+    .project img {
+        height: 30vh;
+    }
+
+    .description {
+        margin-bottom: 20px;
+    }
+
+    .contact {
+        height: 100vh;
+    }
+
+    .contact-div {
+        font-size: 0.8em;
+    }
+
+}
