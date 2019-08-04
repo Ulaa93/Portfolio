@@ -588,10 +588,11 @@ footer {
     .projects article {
         height: 55vh;
         flex: 1 1 100%;
+        height: 70vh;
     }
 
     .project img {
-        height: 50vh;
+        height: 60vh;
         width: 100%;
     }
 
@@ -624,7 +625,6 @@ footer {
         animation: none;
         opacity: 1;
         overflow: inherit;
-
     }
 
     .name h2 {
@@ -650,19 +650,15 @@ footer {
 
     .projects {
         min-height: 150vh;
-        /* width: 100%; */
-
     }
 
     .projects article {
-        /* width: 100%; */
         height: 100vh;
     }
 
     .project img {
         height: 90vh;
         width: 100vw;
-
         filter: brightness(50%);
     }
 
@@ -758,6 +754,19 @@ footer {
 
     .project img {
         height: 30vh;
+        filter: brightness(50%);
+    }
+
+    .project p {
+        opacity: 1;
+    }
+
+    .project:hover img {
+        filter: brightness(50%);
+    }
+
+    .project:hover p {
+        opacity: 1;
     }
 
     .description {
