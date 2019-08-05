@@ -720,7 +720,6 @@ footer {
         animation: none;
         opacity: 1;
         overflow: inherit;
-
     }
 
     .name h2 {
@@ -733,7 +732,7 @@ footer {
     }
 
     section h2 {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     .skills .section-wrap div {
