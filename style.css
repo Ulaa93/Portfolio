@@ -213,8 +213,8 @@ section h2 {
 .aboutme .bigger {
     font-size: 2rem;
     font-weight: bold;
-
 }
+
 
 /* Skills, Contact */
 
@@ -382,7 +382,6 @@ form {
     padding: 0 10px;
     justify-content: center;
     align-content: center;
-
 }
 
 form input {
@@ -569,10 +568,8 @@ footer {
         -moz-hyphens: auto;
         -ms-hyphens: auto;
         hyphens: auto;
-        /* text-align: left; */
         font-size: 1.2em;
         margin: 15px 5px;
-
     }
 
     .skills {
