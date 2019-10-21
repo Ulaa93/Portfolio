@@ -19,10 +19,10 @@
     <nav>
         <ul>
             <li><a href="#">Start</a></li>
-            <li><a href=" aboutme.html">O mnie</a></li>
-            <li><a href="skills.html">Umiejętności</a></li>
-            <li><a href="projects.html">Projekty</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#skills-all">Umiejętności</a></li>
+            <li><a href="#projects-all">Projekty</a></li>
+            <li><a href="#contact-all">Kontakt</a></li>
         </ul>
     </nav>
 
@@ -35,7 +35,7 @@
     </header>
 
     <div class="wrapper">
-        <section class="aboutme">
+        <section class="aboutme" id="about">
             <h2>O mnie</h2>
             <div class="section-wrap">
                 <div class="photo">
@@ -56,7 +56,9 @@
                     znajdę optymalne rozwiązanie 🙂), ale stwierdziłam, że jednak nie jest to zajęcie, z którym wiążę
                     swoją przyszłość. Szukając innych alternatyw postanowiłam spróbować swoich sił we front-endzie i
                     udało się! To jest to co chciałabym robić 🙂 Codziennie wolne chwile poświęcam poszerzaniu wiedzy i
-                    zdobywaniu nowych umiejętności.</p>
+                    zdobywaniu nowych umiejętności. Ukończyłam kurs programowania CodersCamp we Wrocławiu, który pomógł
+                    mi usystematyzować zdobytą wcześniej wiedzę z HTML, CSS oraz JS a także wprowadził mnie w Node.js
+                    oraz React i Redux.</p>
                 <p class="bigger">Co poza programowaniem?</p>
                 <p> W wolnym czasie, jeśli akurat nie tworzę nowych stron, uwielbiam grać w gry planszowe, a
                     także rozwiązywać łamigłówki. </p>
@@ -64,7 +66,7 @@
         </section>
     </div>
 
-    <section class="skills">
+    <section class="skills" id="skills-all">
         <h2>Umiejętności</h2>
         <div class="section-wrap">
             <div>
@@ -84,41 +86,69 @@
 
     <div class="wrapper">
 
-        <section class="projects">
+        <section class="projects" id="projects-all">
             <h2>Projekty</h2>
             <div class="section-wrap">
 
                 <article>
                     <div class="project">
-                        <a href="#">
-                            <img src="img/landscape-4219313_1920.jpg" alt="">
-                            <p>Projekt 1 </p>
-                        </a>
+                        <img src="img/weather.png" alt="">
+                        <!-- <p> Aplikacja pogodowa </p> -->
                     </div>
-                    <div class="description">Tu będzie krótki opis 1 projektu.</div>
+                    <div class="description">
+                        <h2>Aplikacja pogodowa</h2>
+                        <p>Aplikacja pogodowa stworzona w grupie w ramach kursu CodersCamp. W tym projekcie byłam
+                            współodpowiedzialna za logikę strony. Użyte języki: JavaScript</p>
+                        <div>
+                            <a href="https://github.com/codersCampKiwiTeam/Weather-App"><i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://coderscampkiwiteam.github.io/Weather-App/"><i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
                 </article>
 
                 <article>
                     <div class="project">
-                        <a href="#">
-                            <img src="img/beverage-3157395_1920.jpg" alt="">
-                            <p> Projekt 2 </p>
-                        </a>
+                        <img src="img/nowe zadanie.PNG" alt="">
+                        <!-- <p> Aplikacja todo </p> -->
                     </div>
-                    <div class="description">Tu będzie krótki opis 2 projektu.</div>
+                    <div class="description">
+                        <h2>Aplikacja todo</h2>
+                        <p>Grupowy projekt, w którym użytkownik po założeniu konta i zalogowaniu się może dodawać nowe
+                            zadania, odchaczać wykonane lub usuwać. W tym projekcie byłam odpowiedzialna za strukturę
+                            oraz wygląd strony. Użyte technologie: HTML, CSS.</p>
+                        <div>
+                            <a href="https://github.com/codersCampKiwiTeam/toDoList"><i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://coderscampkiwiteam.github.io/toDoList/?"><i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
                 </article>
 
                 <article>
                     <div class="project">
-                        <a href="#">
-                            <img src="img/margarite-4213982_1920.jpg" alt="">
-                            <p>Projekt 3 </p>
-                        </a>
+                        <img src="img/cinema.png" alt="">
+                        <!-- <p> Aplikacja kinowa </p> -->
                     </div>
-                    <div class="description">Tu będzie krótki opis 3 projektu.</div>
+                    <div class="description">
+                        <h2>Aplikacja kinowa</h2>
+                        <p>Projekt w trakcie poprawek. Aplikacja służąca do rezerwacji miejsc w kinie na aktualnie grane
+                            filmy. Strona pokazuje aktualny repertuar kinowy a także nadchodzące premiery. Użyte
+                            technologie: React, Redux, Node.js. </p>
+                        <div>
+                            <a href="https://github.com/Ulaa93/movie-app"><i class="fab fa-github"></i>
+                            </a>
+                            <a>
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+
                 </article>
 
-                <article>
+                <!-- <article>
                     <div class="project">
                         <a href="#">
                             <img src="img/giraffe-4312090_1920.jpg" alt="">
@@ -126,22 +156,22 @@
                         </a>
                     </div>
                     <div class="description">Tu będzie krótki opis 4 projektu.</div>
-                </article>
+                </article> -->
             </div>
         </section>
     </div>
 
-    <section class="contact">
+    <section class="contact" id="contact-all">
         <h2>Kontakt</h2>
         <div class="contact-wrap">
 
             <form action="mailto:ulaa93@gmail.com" method="POST" enctype="text/plain">
-                <label for="firstname">Podaj imię:</label><input type="text" name="firstname" value="Imię.."
+                <label for="firstname">Podaj imię:</label><input type="text" name="firstname" placeholder="Imię.."
                     id="firstname">
-                <label for="title">Tytuł wiadomości:</label><input type="text" name="title" value="Tytuł..." id="title">
+                <label for="title">Tytuł wiadomości:</label><input type="text" name="title" placeholder="Tytuł..." id="title">
                 <label for="message">Treść wiadomości:</label><textarea rows="6" columns="10"
-                    id="message">Tutaj wpisz treść wiadomości..</textarea>
-                <input type="submit" value="Prześlij">
+                    id="message" placeholder="Tutaj wpisz treść wiadomości.."></textarea>
+                <input id="submit-btn" type="submit" value="Prześlij">
             </form>
 
             <div class="contact-div">

@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 .wrapper {
     max-width: 1400px;
     margin: 0 auto;
@@ -38,6 +41,7 @@ nav li {
     list-style: none;
     border-right: 2px solid rgb(116, 77, 32);
     width: 20%;
+    overflow: hidden;
 }
 
 nav li:last-of-type {
@@ -164,6 +168,7 @@ section {
     margin: 20px auto;
     padding: 0 20px;
     overflow: hidden;
+    width: 90%;
 }
 
 .section-wrap {
@@ -190,6 +195,7 @@ section h2 {
 /* About me */
 
 .aboutme {
+    padding-top:25px;
     min-height: 120vh;
 }
 
@@ -220,7 +226,8 @@ section h2 {
 
 .skills,
 .contact {
-    background-color: rgba(61, 51, 44, 0.7);
+    padding-top:25px;
+    background-color: rgb(143, 110, 61);
     color: ivory;
     border-top-left-radius: 150px;
     -moz-border-radius-topleft: 150px;
@@ -276,32 +283,35 @@ section h2 {
 
 .projects .section-wrap {
     padding-top: 10px;
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: row;
     flex-wrap: wrap;
-    flex: 1 1 100%;
+    flex: 1 1 100%; */
     overflow: hidden;
 }
 
 .projects article {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 55vh;
-    width: 50%;
+    width: 90%;
+    /* width: 50%; */
     overflow: hidden;
     flex-shrink: 1;
     align-items: center;
 }
 
 .project {
+    /* display: flex; */
+    width: 50%;
     height: 80%;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     cursor: pointer;
 }
 
-.project p {
-    display: block;
+/* .project p {
+    display: block; 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -313,7 +323,7 @@ section h2 {
     border-bottom: 1px solid ivory;
     transition: 0.5s;
     opacity: 0;
-}
+} */
 
 .project img {
     height: 40vh;
@@ -322,22 +332,47 @@ section h2 {
 }
 
 .project:hover img {
-    filter: brightness(50%);
+transform: scale(1.1)
 }
 
-.project:hover p {
+/* .project:hover p {
     opacity: 1;
-}
+} */
 
 .description {
-    width: 60vh;
-    border: 1px solid rgb(116, 77, 32);
-    height: 8vh;
+align-self: flex-start;
+    width: 70%;
+    /* border: 1px solid rgb(116, 77, 32); */
+    /* height: 8vh; */
     padding: 20px;
     text-align: center;
+    
+}
+.description p{
+    width: 100%;
+    /* border: 1px solid rgb(116, 77, 32); */
+font-size:1.2em;
+line-height: 1.6em;
+/* margin-top: 40px; */
 }
 
+.description h2{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.description div{
+    margin-top: 20px;
+    font-size:2em;
+}
+.description div a{
+    padding-right:10px;
+}
 
+.description div a:hover{
+font-size:1.2em;
+    color: rgb(116, 77, 32);
+}
 /* Contact */
 
 .contact-wrap {
@@ -393,7 +428,11 @@ textarea {
     font-size: 0.8em;
     margin: 5px 0;
 }
-
+ #submit-btn{
+     cursor: pointer;
+     font-weight: bold;
+     background-color:ivory;
+ }
 
 /* Footer */
 
