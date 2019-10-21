@@ -293,12 +293,13 @@ section h2 {
 .projects article {
     display: flex;
     flex-direction: row;
-    height: 55vh;
+    /* height: 55vh; */
     width: 90%;
     /* width: 50%; */
     overflow: hidden;
     flex-shrink: 1;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .project {
@@ -326,8 +327,9 @@ section h2 {
 } */
 
 .project img {
-    height: 40vh;
-    width: 60vh;
+    min-width:400px;
+    height: 35vh;
+    width: 45vh;
     transition: 0.5s;
 }
 
@@ -448,7 +450,7 @@ footer {
 
 
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1124px) {
     nav a {
         font-size: 1em;
     }
@@ -482,25 +484,33 @@ footer {
         font-size: 2em;
     }
 
-    .projects .section-wrap {
+    /* .projects .section-wrap {
         justify-content: space-around;
-    }
+    } */
 
-    .projects article {
+    /* .projects article {
         height: 40vh;
         width: 45%;
-    }
+    }*/
 
+    
     .project img {
+        min-width:300px;
         height: 30vh;
         width: 45vh;
     }
 
     .description {
-        width: 45vh;
-        height: 6vh;
+        /* width: 45vh; */
+        /* height: 6vh; */
+        font-size:0.8em;
+    } 
+    .description div{
+        font-size:1.5em;
     }
-
+/* .description h2{
+    font-size: 2em;
+} */
     .contact-wrap {
         height: 50vh;
     }
@@ -517,7 +527,7 @@ footer {
 }
 
 
-@media screen and (max-width:840px) {
+@media screen and (max-width:860px) {
 
     .burger {
         position: fixed;
@@ -623,25 +633,49 @@ footer {
         font-size: 1.4em;
     }
 
-    .projects {
-        min-height: 150vh;
+    .projects article{
+        flex-direction: column;
     }
+.project{
+    width:90%;
+    height: 50vw;
+}
+.project img{
+    width: 100%;
+    height: 100%;
 
-    .projects article {
+}
+.description{
+    width:90%;
+}
+
+    
+    /* .projects {
+        min-height: 150vh;
+    } */
+
+    /* .projects article {
         height: 55vh;
         flex: 1 1 100%;
         height: 70vh;
+    }*/
+
+    /* .project article{
+        flex-direction: column;
+        align-items: center
     }
 
-    .project img {
+     .project img {
+         min-width: 100px;
         height: 60vh;
-        width: 100%;
-    }
+        width: 80%;
+        
+    } 
 
     .description {
         margin-top: 10px;
         width: 100%;
-    }
+    }  */
 
     .contact {
         height: 100vh;
@@ -654,13 +688,17 @@ footer {
     .contact-div {
         flex-basis: 100%;
     }
+    .contact-div i{
+        padding: 18px
+
+    }
 
     form {
         flex-basis: 100%;
     }
 }
 
-@media screen and (max-width:840px) and (orientation: landscape) {
+@media screen and (max-width:860px) and (orientation: landscape) {
 
     .name h1 {
         animation: none;
@@ -680,7 +718,23 @@ footer {
         font-size: 1.2em;
     }
 
-    .projects {
+    /* .projects article{
+        flex-direction: column;
+    }
+.project{
+    width:90%;
+    height: 50vw;
+}
+.project img{
+    width: 100%;
+    height: 100%;
+
+}
+.description{
+    width:90%;
+} */
+
+    /* .projects {
         min-height: 150vh;
     }
 
@@ -708,7 +762,7 @@ footer {
 
     .project:hover p {
         opacity: 1;
-    }
+    } */
 
     .contact {
         min-height: 150vh;
@@ -784,7 +838,7 @@ footer {
         font-size: 1.2em;
     }
 
-    .projects {
+    /* .projects {
         min-height: 150vh;
     }
 
@@ -811,7 +865,7 @@ footer {
 
     .description {
         margin-bottom: 20px;
-    }
+    } */
 
     .contact {
         height: 100vh;
@@ -829,8 +883,8 @@ footer {
     .contact-div p {
         height: 15vh;
     }
-
-    .contact a:hover {
+ 
+ .contact a:hover {
         font-weight: normal;
         text-decoration: none;
     }
