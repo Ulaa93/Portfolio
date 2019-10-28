@@ -289,9 +289,7 @@ section h2 {
 .projects article {
     display: flex;
     flex-direction: row;
-    /* height: 55vh; */
     width: 90%;
-    /* width: 50%; */
     overflow: hidden;
     flex-shrink: 1;
     align-items: center;
@@ -299,10 +297,8 @@ section h2 {
 }
 
 .project {
-    /* display: flex; */
     width: 50%;
     height: 80%;
-    /* overflow: hidden; */
     position: relative;
     cursor: pointer;
 }
@@ -638,35 +634,7 @@ footer {
     width:90%;
 }
 
-    
-    /* .projects {
-        min-height: 150vh;
-    } */
-
-    /* .projects article {
-        height: 55vh;
-        flex: 1 1 100%;
-        height: 70vh;
-    }*/
-
-    /* .project article{
-        flex-direction: column;
-        align-items: center
-    }
-
-     .project img {
-         min-width: 100px;
-        height: 60vh;
-        width: 80%;
-        
-    } 
-
-    .description {
-        margin-top: 10px;
-        width: 100%;
-    }  */
-
-    .contact {
+     .contact {
         height: 100vh;
     }
 
@@ -679,7 +647,6 @@ footer {
     }
     .contact-div i{
         padding: 18px
-
     }
 
     form {
@@ -706,52 +673,6 @@ footer {
     .skills p {
         font-size: 1.2em;
     }
-
-    /* .projects article{
-        flex-direction: column;
-    }
-.project{
-    width:90%;
-    height: 50vw;
-}
-.project img{
-    width: 100%;
-    height: 100%;
-
-}
-.description{
-    width:90%;
-} */
-
-    /* .projects {
-        min-height: 150vh;
-    }
-
-    .projects article {
-        height: 100vh;
-    }
-
-    .project img {
-        height: 90vh;
-        width: 100vw;
-        filter: brightness(50%);
-    }
-
-    .description {
-        margin-bottom: 20px;
-    }
-
-    .project p {
-        opacity: 1;
-    }
-
-    .project:hover img {
-        filter: brightness(50%);
-    }
-
-    .project:hover p {
-        opacity: 1;
-    } */
 
     .contact {
         min-height: 150vh;
@@ -826,35 +747,6 @@ footer {
     .skills p {
         font-size: 1.2em;
     }
-
-    /* .projects {
-        min-height: 150vh;
-    }
-
-    .projects article {
-        height: 40vh;
-    }
-
-    .project img {
-        height: 30vh;
-        filter: brightness(50%);
-    }
-
-    .project p {
-        opacity: 1;
-    }
-
-    .project:hover img {
-        filter: brightness(50%);
-    }
-
-    .project:hover p {
-        opacity: 1;
-    }
-
-    .description {
-        margin-bottom: 20px;
-    } */
 
     .contact {
         height: 100vh;
