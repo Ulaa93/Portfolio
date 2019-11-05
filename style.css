@@ -303,6 +303,9 @@ section h2 {
     align-items: center;
     margin-bottom: 30px;
 }
+.projects article:nth-of-type(2n){
+    flex-direction: row-reverse;
+}
 
 .project {
     width: 50%;
@@ -616,6 +619,9 @@ footer {
         flex-direction: column;
         width:90vw;
     }
+    .projects article:nth-of-type(2n){
+        flex-direction: column;
+    }
 
     .project{
         width:100%;
@@ -629,6 +635,9 @@ footer {
 
     .description{
         width:90%;
+    }
+    .description h2 {
+        font-size: 1.6em;
     }
 
      .contact {
